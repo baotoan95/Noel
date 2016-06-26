@@ -1,0 +1,187 @@
+* {
+    font-family: monospace;
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+#wrapper {
+    position: relative;
+    z-index: 9999;
+    height: 600px;
+}
+
+#ground {
+    background: url('../images/footer.png') no-repeat;
+    height: 15%;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    background-size: 100% 100%;
+    z-index: 999;
+}
+
+#ground a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: red;
+	position: fixed;
+	right: 10px;
+	bottom: 2px;
+}
+
+#ground a:hover {
+	color: yellow;
+}
+
+#head {
+    background: url('../images/head.png') repeat-x;
+    min-height: 100px;
+    z-index: 9999;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+
+#head #left {
+    position: fixed;
+    z-index: 999;
+    left: 0px;
+}
+
+#head #right {
+    position: fixed;
+    right: 0px;
+    z-index: 999;
+}
+
+marquee {
+    position: fixed;
+    z-index: 9;
+    width: 100%;
+    left: 0px;
+    top: 5em;
+}
+
+#santa {
+    cursor: pointer;
+    position: fixed;
+    z-index: 99999;
+    min-height: 100px;
+    min-width: 200px;
+    background: url('../images/santa.gif') no-repeat;
+    background-size: 100% 100%;
+}
+
+#santa2 {
+    background: url('../images/4.gif') no-repeat;
+    z-index: 99999;
+    width: 400px;
+    height: 200px;
+    position: fixed;
+    right: 2%;
+    top: 10%;
+    transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+}
+
+#santa3 {
+    background: url('../images/snowperson.png') no-repeat;
+    background-size: 100% 100%;
+    z-index: 99999;
+    width: 200px;
+    height: 200px;
+    position: fixed;
+    right: 30%;
+    bottom: 20px;
+}
+
+#home {
+    background: url('../images/home.gif') no-repeat;
+    width: 250px;
+    height: 150px;
+    position: fixed;
+    right: 10%;
+    bottom: 10px;
+    z-index: 99999;
+}
+
+#angle1 {
+    background: url('../images/angel.gif') no-repeat;
+    background-size: 100% 100%;
+    width: 50px;
+    height: 60px;
+    position: fixed;
+    right: 15%;
+    bottom: 20%;
+    z-index: 99999;
+    transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+}
+
+#angle2 {
+    background: url('../images/angel.gif') no-repeat;
+    background-size: 100% 100%;
+    width: 50px;
+    height: 60px;
+    position: fixed;
+    left: 27%;
+    bottom: 45%;
+    z-index: 99999;
+    transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+}
+
+#tree2 {
+    background: url('../images/mchhnn.gif') no-repeat;
+    background-size: 100% 100%;
+    width: 30%;
+    height: 100%;
+    position: fixed;
+    left: 0px;
+    bottom: -10%;
+    z-index: 99;
+}
+
+#typo {
+    width: 90%;
+    color: yellow;
+    z-index: 999;
+    position: fixed;
+    left: 5%;
+    top: 25%;
+    text-align: center;
+    font-size: 1em;
+}
+
+#tree {
+    background: url('../images/tree.png') no-repeat;
+    width: 250px;
+    height: 150px;
+    position: fixed;
+    left: 10%;
+    bottom: 10%;
+    z-index: 99999;
+}
+
+canvas {
+    position: fixed;
+    top: 0px;
+    z-index: 9;
+    width: 100%;
+    height: 90%;
+}
+
+@media screen and (max-width: 600px) {
+    #tree, #tree2, #santa2, #angle2, #angle1, #home, #santa3 {display: none;}
+}
+

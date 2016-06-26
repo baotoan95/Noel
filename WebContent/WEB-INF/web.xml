@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>Noel</display-name>
+	<welcome-file-list>
+		<welcome-file>happy.html</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>happy</servlet-name>
+		<jsp-file>/happy.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>happy</servlet-name>
+		<url-pattern>/happy.html</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>edit</servlet-name>
+		<jsp-file>/editContent.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>edit</servlet-name>
+		<url-pattern>/edit.html</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>confirm</servlet-name>
+		<servlet-class>com.baotoan.noel.GenerateHTML</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>confirm</servlet-name>
+		<url-pattern>/happy</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+        <servlet-name>MainMenu</servlet-name>
+        <servlet-class>com.baotoan.noel.MainMenu</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>MainMenu</servlet-name>
+        <url-pattern>/fbhome</url-pattern>
+    </servlet-mapping>
+	
+</web-app>
