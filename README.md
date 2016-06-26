@@ -15,5 +15,12 @@
 - Bước 3: Chạy project
 
 ## Bản quyền
-- Được tạo bởi BTIT95 trước Noel 2015
+- Được tạo bởi [BTIT95] trước Noel 2015
 - Share for free (Just for fun)
+
+## Lưu ý
+Project được chia sẻ nhằm mục đích học hỏi, vui lòng liên hệ với tôi nếu có vấn đề gì trong project hoặc có giải pháp nào hay xin vui lòng chia sẻ. Cảm ơn!!!
+
+[//]:#
+
+[BTIT95]: <https://www.facebook.com/baotoan95>
